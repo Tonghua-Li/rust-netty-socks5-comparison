@@ -1,0 +1,13 @@
+version: '2'
+
+services: 
+    netty-socks5: 
+        build: ./netty-socks5
+        ports: 
+            - "1081:1080"
+    rust-socks5:
+        build: ./rust-socks5
+        ports:
+            - "1082:1080"
+    webapp:
+        build: ./webapp
