@@ -9,5 +9,10 @@ services:
         build: ./rust-socks5
         ports:
             - "1082:1080"
+        
+    # tokio-socks5:
+    #     build: ./tokio-socks5
+    #     ports:
+    #         - "1083:1080"
     webapp:
         build: ./webapp
